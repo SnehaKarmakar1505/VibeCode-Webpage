@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.color-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.swinging-text {
+  pointer-events: none;
+}
