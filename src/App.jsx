@@ -2,12 +2,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [bgColor, setBgColor] = useState('#ffffff')
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
-
-  useEffect(() => {
-    document.body.style.backgroundColor = bgColor
-  }, [bgColor])
+  const [textColor, setTextColor] = useState('#000000')
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -21,7 +17,7 @@ function App() {
 
   const changeColor = () => {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
-    setBgColor(randomColor)
+    setTextColor(randomColor)
   }
 
   return (
@@ -31,7 +27,8 @@ function App() {
         style={{ 
           position: 'absolute', 
           left: mousePos.x - 150, 
-          top: mousePos.y - 50 
+          top: mousePos.y - 50,
+          color: textColor
         }}
       >
         Du Du Du Max Verstappen

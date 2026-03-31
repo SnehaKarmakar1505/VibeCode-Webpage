@@ -52,6 +52,10 @@
 
 body {
   margin: 0;
+  background-image: url('https://i.pinimg.com/736x/33/27/05/3327058199c47f7ff29f8e48b571f5bf.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #root {
